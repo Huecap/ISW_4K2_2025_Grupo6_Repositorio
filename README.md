@@ -116,6 +116,20 @@ main -> estable
 feature/<nombre>  -> Nuevas Funcionalidades
 fix/<nombre> -> Fixes 
 ```
+- **`main` → estable**
+    - Rama principal que siempre contiene el código en **estado estable**.
+    - Solo recibe merges de ramas ya probadas (features terminadas o fixes validados).
+    - Representa el seguimiento de la **línea base de producción**.
+- **`feature/<nombre>` → nuevas funcionalidades**
+    - Ramas creadas a partir de `main`.
+    - Se usan para desarrollar **nuevas características** sin afectar la rama estable.
+    - Una vez finalizadas y probadas, se integran nuevamente a `main`.
+    - Ejemplo: `feature/login`, `feature/reportes`.
+- **`fix/<nombre>` → fixes**
+    - Ramas específicas para realizar **correcciones puntuales de errores**.
+    - Se crean desde `main` para atender problemas detectados en la versión estable.
+    - Se fusionan de vuelta en `main` una vez validada la solución.
+    - Ejemplo: `fix/error-login`, `fix/ui-navbar`.
 
 ---
 ### Lineas Base
