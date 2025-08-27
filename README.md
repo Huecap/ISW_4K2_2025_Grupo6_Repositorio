@@ -1,45 +1,34 @@
 # Plan de gestión de configuración de software - Grupo 6 - 4K2 2025 
 
 ## Integrantes 
-- Huenu Lihuel Capdevila Vicente - 94513 
-- Arrigo Gaspar - 94365
-- Alves Carneiro Rocío Mailen - 94215
-- Garcia Amadey Juan Cruz - 90584
-- Malnis Maria Sol - 99535
-- Gragera Facundo Gabriel - 76547 
-- Becerra Felipe - 91680
-- Castro Walter Matías - 90557
+
+| Nombre completo                | Legajo |
+| ------------------------------ | ------ |
+| Arrigo Gaspar                  | 94365  |
+| Alves Carneiro Rocío Mailen    | 94215  |
+| Huenu Lihuel Capdevila Vicente | 94513  |
+| Garcia Amadey Juan Cruz        | 90584  |
+| Malnis Maria Sol               | 99535  |
+| Gragera Facundo Gabriel        | 76547  |
+| Becerra Felipe                 | 91680  |
+| Castro Walter Matías           | 90557  |
+
 
 ## Estructura del Proyecto 
 ```
-ISW_4K2_2025_G6_Repositorio
-|--- Readme.md 
+ICS_4K2_2025_G6_Repositorio
 |--- InformacionGeneral
-		|--- Planificacion_ISW_4K4_2025.<ext>
-		|--- Programa_ICS_4K4_2025.<ext>
 |--- Teórico
 		|--- MaterialBibliográfico
-				|--- <NombreLibro>.<ext>
 		|--- PresentacionesDeClase
-				|--- PresentacionUnidad<N>.<ext>
 		|--- Resumenes
-				|--- ResumenUnidad<N>.<ext>
-		|--- LinksClasesGrabadasTeorico.<ext>
 |--- Práctico 
 		|--- TrabajosPracticos
 				|--- TP<N>
-					  |--- TP<N>Consignas.<ext>
-					  |--- TP<N>Resolucion.<ext>
-					  |--- TP<N>Correcciones.<ext>
 		|--- ActividadesClase
 					|--- Actividades<N>
-					  |--- Actividad<N>Consignas.<ext>
-					  |--- Actividad<N>Resolucion.<ext>
 		|--- TrabajosResueltos
 				|--- TPResueltos<N>
-					  |--- TPResuelto<N>Consignas.<ext>
-					  |--- TPResuelto<N>Resolucion.<ext>
-		|--- LinksClasesGrabadasPractico.<ext>
 ```
 
 
@@ -48,41 +37,46 @@ ISW_4K2_2025_G6_Repositorio
 **Esquema de nomenclatura de archivos**
 
 ```
-<descripción>-<versión>.<extension>
+<Descripcion>_<CaracteristicaA>_<CaracteristicaB>_...<CaracteristicaN>_<N>.<ext>
 ```
 
-| Items de Configuracion                       | Tipo               | Nombre                              | Ubicacion |
-| -------------------------------------------- | ------------------ | ----------------------------------- | --------- |
-| Plan de gestión de configuración de software | Proyecto           | `README.MD`                         | README.md |
-| Planificación                                | InformacionGeneral | `Planificacion_ISC_4K4_2025.<ext>`  |           |
-| Cronograma                                   | InformacionGeneral | `Programa_ICS_4K4_2025.<ext>`       |           |
-| Libros                                       | Teorico            | `<NombreLibro>.<ext>`               |           |
-| Presentación de clases                       | Teorico            | ` PresentacionUnidad<N>.<ext>`      |           |
-| Resúmenes de Unidades                        | Teorico            | `ResumenUnidad<N>.<ext>`            |           |
-| Links a clases grabadas Teórico              | Teórico            | `LinksClasesGrabadasTeorico.<ext>`  |           |
-| Links a clases grabadas Práctico             | Práctico           | `LinksClasesGrabadasPractico.<ext>` |           |
-| Trabajo Practico Consignas                   | Práctico           | `TP<N>Consignas.<ext>`              |           |
-| Trabajo Practico Resolucion                  | Práctico           | `TP<N>Resolucion.<ext>`             |           |
-| Trabajo Practico Correcciónes                | Práctico           | `TP<N>Correcciones.<ext>`           |           |
-| Actividades Consignas                        | Práctico           | `Actividad<N>Consignas.<ext>`       |           |
-| Actividades resolucion                       | Práctico           | `Actividad<N>Resolucion.<ext>`      |           |
-| Trabajos Practicos Resuelto Consignas        | Práctico           | `TPResuelto<N>Consignas.<ext>`      |           |
-| Trabajo Practico Resuelto Resolucion         | Práctico           | `TPResuelto<N>Resolucion.<ext>`     |           |
-| Links Clases Grabadas Practico               | Práctico           | `LinksClasesGrabadasPractico`       |           |
+| Items de Configuracion                       | Tipo               | Esquema de Nombrado                    | Ubicacion                                                               |
+| -------------------------------------------- | ------------------ | -------------------------------------- | ----------------------------------------------------------------------- |
+| Plan de gestión de configuración de software | Proyecto           | `README.MD`                            | `ICS_4K2_2025_G6_Repositorio`                                           |
+| Planificación                                | InformacionGeneral | `Planificacion_ISC_4K2_2025.<ext>`     | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
+| Cronograma                                   | InformacionGeneral | `Programa_ICS_4K2_2025.<ext>`          | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
+| Libros                                       | Teorico            | `<NombreLibro>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`             |
+| Presentación de clases                       | Teorico            | `Presentacion_Unidad_<N>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`             |
+| Resúmenes de Unidades                        | Teorico            | `Resumen_Unidad_<N>.<ext>`             | `ICS_4K2_2025_G6_Repositorio/Teórico/Resumenes`                         |
+| Links a clases grabadas Teórico              | Teórico            | `Links_Clases_Grabadas_Teorico.<ext>`  | `ICS_4K2_2025_G6_Repositorio/Teórico`                                   |
+| Links a clases grabadas Práctico             | Práctico           | `Links_Clases_Grabadas_Practico.<ext>` | `ICS_4K2_2025_G6_Repositorio/Práctico`                                  |
+| Trabajo Practico Consignas                   | Práctico           | `TP<N>Consignas.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
+| Trabajo Practico Resolucion                  | Práctico           | `TP_<N>_Resolucion.<ext>`              | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
+| Trabajo Practico Correcciónes                | Práctico           | `TP_<N>_Correcciones.<ext>`            | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
+| Actividades Consignas                        | Práctico           | `Actividad_<N>_Consignas.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Práctico/ActividadesClase/Actividades<N>`  |
+| Actividades resolucion                       | Práctico           | `Actividad_<N>_Resolucion.<ext>`       | `ICS_4K2_2025_G6_Repositorio/Práctico/ActividadesClase/Actividades<N>`  |
+| Trabajos Practicos Resuelto Consignas        | Práctico           | `TPResuelto_<N>_Consignas.<ext>`       | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosResueltos/TPResueltos<N>` |
+| Trabajo Practico Resuelto Resolucion         | Práctico           | `TPResuelto_<N>_Resolucion.<ext>`      | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosResueltos/TPResueltos<N>` |
+| Links Clases Grabadas Practico               | Práctico           | `Links_Clases_Grabadas_Practico`       | `ICS_4K2_2025_G6_Repositorio/Práctico`                                  |
 
 ---
 
 ## Glosario
 
-| Palabra | Significado                                     | Ejemplos                         |
-| ------- | ----------------------------------------------- | -------------------------------- |
-| ISW     | Abreviacion de Ingeniería y calidad de software | `Planificacion_ISC_4K4_2025.pdf` |
-|         |                                                 |                                  |
+| Palabra             | Significado                                                                    | Ejemplos                         |
+| ------------------- | ------------------------------------------------------------------------------ | -------------------------------- |
+| ICS                 | Abreviacion de Ingeniería y calidad de software                                | `Planificacion_ISC_4K2_2025.pdf` |
+| 4K2                 | Comisión de Cursado de la asignatura                                           | `Resumen_Unidad_4.md`            |
+| 2025                | Año de desarrollo del proyecto                                                 | `Resumen_Unidad_3.md`            |
+| G6                  | Numero Grupo en el que se desarrollo el proyecto                               | `Resumen_Unidad_1.md`            |
+| `<N>`               | Numero de trabajo / clase / actividad                                          | `Actividad_12_Consignas.pdf`     |
+| `<ext>`             | Extensión del archivo en cuestion (.pdf, .txt, .md, etc)                       | `Actividad_12_Consignas.pdf`     |
+| `<CaracteristicaN>` | Hace referencia a alguna caracteristica significativa para el Item en cuestion | `Resumen_Unidad_3.md`            |
 
 
 ## Criterios de establecimiento de Linea base
-Luego de cada entrega de una corrección de un trabajo practico, se procederá a establecer una versión de la Línea base
 
+>Luego de cada entrega de una corrección de un trabajo practico, se procederá a establecer una versión de la Línea base
 
 
 ## Esquema de Nomenclaturas para trabajar 
@@ -94,6 +88,7 @@ Luego de cada entrega de una corrección de un trabajo practico, se procederá a
 <Descripción>_<Numero>.<extension>
 ```
 
+---
 ### Commits
 **Esquema de nomenclatura de commits**
 ```
@@ -102,6 +97,17 @@ Luego de cada entrega de una corrección de un trabajo practico, se procederá a
 
 Tipos: `feat`, `fix`, `docs`, `style`, `refactor`
 
+|Tipo|Significado breve|Ejemplo commit|
+|---|---|---|
+|**feat**|Nueva funcionalidad|`feat(auth): agregar login con JWT`|
+|**fix**|Corrección de bug|`fix(api): resolver error 500 en /users`|
+|**docs**|Documentación|`docs(readme): actualizar pasos de instalación`|
+|**style**|Formato/estilo (no lógica)|`style(css): reordenar clases del botón`|
+|**refactor**|Reorganizar/mejorar código (sin cambiar comportamiento)|`refactor(user): simplificar lógica de registro`|
+|**test**|Pruebas automáticas|`test(cart): agregar test para eliminar producto`|
+|**chore**|Tareas varias / dependencias|`chore(deps): actualizar versión de express`|
+
+---
 ### Ramas 
 **Git Flow**
 
@@ -111,6 +117,7 @@ feature/<nombre>  -> Nuevas Funcionalidades
 fix/<nombre> -> Fixes 
 ```
 
+---
 ### Lineas Base
 **SemVer (Semantic Versioning)** -> ``MAJOR.MINOR.PATCH``
 ```
