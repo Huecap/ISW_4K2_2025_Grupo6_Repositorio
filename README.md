@@ -20,6 +20,7 @@ ICS_4K2_2025_G6_Repositorio
 |--- InformacionGeneral
 |--- Teórico
 		|--- MaterialBibliográfico
+                |--- Tema
 		|--- PresentacionesDeClase
 		|--- Resumenes
 |--- Práctico 
@@ -46,11 +47,11 @@ ICS_4K2_2025_G6_Repositorio
 | Planificación                                | InformacionGeneral | `Planificacion_ISC_4K2_2025.<ext>`     | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
 | Cronograma                                   | InformacionGeneral | `Programa_ICS_4K2_2025.<ext>`          | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
 | Libros                                       | Teorico            | `<NombreLibro>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`             |
-| Presentación de clases                       | Teorico            | `Presentacion_Unidad_<N>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`             |
+| Presentación de clases                       | Teorico            | `Presentacion_Tema_<N>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`             |
 | Resúmenes de Unidades                        | Teorico            | `Resumen_Unidad_<N>.<ext>`             | `ICS_4K2_2025_G6_Repositorio/Teórico/Resumenes`                         |
 | Links a clases grabadas Teórico              | Teórico            | `Links_Clases_Grabadas_Teorico.<ext>`  | `ICS_4K2_2025_G6_Repositorio/Teórico`                                   |
 | Links a clases grabadas Práctico             | Práctico           | `Links_Clases_Grabadas_Practico.<ext>` | `ICS_4K2_2025_G6_Repositorio/Práctico`                                  |
-| Trabajo Practico Consignas                   | Práctico           | `TP<N>Consignas.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
+| Trabajo Practico Consignas                   | Práctico           | `TP_<N>_Consignas.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
 | Trabajo Practico Resolucion                  | Práctico           | `TP_<N>_Resolucion.<ext>`              | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
 | Trabajo Practico Correcciónes                | Práctico           | `TP_<N>_Correcciones.<ext>`            | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
 | Actividades Consignas                        | Práctico           | `Actividad_<N>_Consignas.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Práctico/ActividadesClase/Actividades<N>`  |
