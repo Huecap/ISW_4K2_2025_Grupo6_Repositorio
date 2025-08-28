@@ -12,6 +12,8 @@
 | Gragera Facundo Gabriel        | 76547  |
 | Becerra Felipe                 | 91680  |
 | Castro Walter Matías           | 90557  |
+| Valentino Gabriel Rocca        | 94774  |
+| Angel Nahuel Villegas          | 94837  |
 
 
 ## Estructura del Proyecto 
