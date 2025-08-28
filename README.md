@@ -6,7 +6,7 @@
 | ------------------------------ | ------ |
 | Arrigo Gaspar                  | 94365  |
 | Alves Carneiro Rocío Mailen    | 94215  |
-| Huenu Lihuel Capdevila Vicente | 94513  |
+| Capdevila Vicente Huenu Lihuel | 94513  |
 | Garcia Amadey Juan Cruz        | 90584  |
 | Malnis Maria Sol               | 99535  |
 | Gragera Facundo Gabriel        | 76547  |
