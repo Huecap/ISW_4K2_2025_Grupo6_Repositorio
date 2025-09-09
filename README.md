@@ -155,7 +155,7 @@ v1.1.1 → solo bugfix.
 
 ---
 **Anotaciones**
-> Linea base: esperar hasta un cierto punto. momento claro. podría ser después de una entrega corregida, después de un tp... un momento definido
+> Linea Base: esperar hasta un cierto punto. momento claro. podría ser después de una entrega corregida, después de un tp... un momento definido
 linea base la hace git 
 
-glosario: hacer un txt que explique la nomenclatura abreviada 
+Glosario: hacer un txt que explique la nomenclatura abreviada 
