@@ -38,8 +38,8 @@ ICS_4K2_2025_G6_Repositorio
 | Programa                                     | InformacionGeneral | `Programa.<ext>`                       | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
 | Cronograma                                   | InformacionGeneral | `Cronograma_Clases.<ext>`              | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
 | Libro                                       | Teorico            | `Unidad_<N>_<NombreLibro>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`                     |
-| Presentación de clase                       | Teorico            | `Presentacion_Tema_<N>.<ext>`           | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                     |
-| Trabajo Practico Consignas                  | Práctico           | `TP_Consignas.<ext>`                    | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos`                         |
+| Presentación de clase                       | Teorico            | `Presentacion_<N>_<Tema>.<ext>`           | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                     |
+| Trabajo Practico Consignas                  | Práctico           | `TP_<N>_Consigna.<ext>`                    | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                         |
 | Trabajo Practico Resuelto                   | Práctico           | `TP_<N>_Resolucion.<ext>`               | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                                     |
 | Ejericio Resuelto                        | Práctico              | `ER_Consignas_y_Resoluciones.<ext>`     | `ICS_4K2_2025_G6_Repositorio/Práctico/EjerciciosResueltos`                       |
 ---
