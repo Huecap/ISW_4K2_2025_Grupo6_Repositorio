@@ -21,7 +21,6 @@
 ICS_4K2_2025_G6_Repositorio
 |--- InformacionGeneral
 |--- Teórico
-		|--- PresentacionesDeClase
 |--- Práctico 
 		|--- TrabajosPracticos
 				|--- TP<N>
@@ -35,8 +34,7 @@ ICS_4K2_2025_G6_Repositorio
 | Plan de gestión de configuración de software | InformacionGeneral | `README.MD`                                      | `ICS_4K2_2025_G6_Repositorio`                                                             |
 | Programa                                     | InformacionGeneral | `Programa.<ext>`                                 | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                                          |
 | Cronograma                                   | InformacionGeneral | `Cronograma_Clases.<ext>`                        | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                                          |
-| Libro                                        | Teorico            | `Unidad_<N>_<NombreLibro>.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`                               |
-| Presentación de clase                        | Teorico            | `Presentacion_<N>_<Tema>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                               |
+| Presentación de clase                        | Teorico            | `Presentacion_<N>_<Tema>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico`                                                     |
 | Trabajo Practico Consignas                   | Práctico           | `TP_<N>_Consigna.<ext>`                          | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
 | Trabajo Practico Resuelto                    | Práctico           | `TP_<N>_Resolucion.<ext>`                        | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
 | Guia Ejercicios Resueltos                    | Practico           | `Ejercicios ResueltosConsignasYResoluciones.pdf` | `ISW_4K2_Repositorio_Grupo6_2025/Práctico/Ejercicios ResueltosConsignasYResoluciones.pdf` |
