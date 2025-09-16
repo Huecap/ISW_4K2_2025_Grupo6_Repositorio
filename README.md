@@ -22,59 +22,40 @@ ICS_4K2_2025_G6_Repositorio
 |--- InformacionGeneral
 |--- Teórico
 		|--- MaterialBibliográfico
-                |--- Tema
 		|--- PresentacionesDeClase
-		|--- Resumenes
 |--- Práctico 
 		|--- TrabajosPracticos
 				|--- TP<N>
-		|--- ActividadesClase
-					|--- Actividades<N>
-		|--- TrabajosResueltos
-				|--- TPResueltos<N>
+		|--- EjerciciosResueltos
 ```
 
 
 ## Ítems de configuración
 
-**Esquema de nomenclatura de archivos**
-
-```
-<Descripcion>_<CaracteristicaA>_<CaracteristicaB>_...<CaracteristicaN>_<N>.<ext>
-```
-
 | Items de Configuracion                       | Tipo               | Esquema de Nombrado                    | Ubicacion                                                               |
 | -------------------------------------------- | ------------------ | -------------------------------------- | ----------------------------------------------------------------------- |
 | Plan de gestión de configuración de software | Proyecto           | `README.MD`                            | `ICS_4K2_2025_G6_Repositorio`                                           |
-| Planificación                                | InformacionGeneral | `Planificacion_ISC_4K2_2025.<ext>`     | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
-| Cronograma                                   | InformacionGeneral | `Programa_ICS_4K2_2025.<ext>`          | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
-| Libros                                       | Teorico            | `<NombreLibro>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`             |
-| Presentación de clases                       | Teorico            | `Presentacion_Tema_<N>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`             |
-| Resúmenes de Unidades                        | Teorico            | `Resumen_Unidad_<N>.<ext>`             | `ICS_4K2_2025_G6_Repositorio/Teórico/Resumenes`                         |
-| Links a clases grabadas Teórico              | Teórico            | `Links_Clases_Grabadas_Teorico.<ext>`  | `ICS_4K2_2025_G6_Repositorio/Teórico`                                   |
-| Links a clases grabadas Práctico             | Práctico           | `Links_Clases_Grabadas_Practico.<ext>` | `ICS_4K2_2025_G6_Repositorio/Práctico`                                  |
-| Trabajo Practico Consignas                   | Práctico           | `TP_<N>_Consignas.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
-| Trabajo Practico Resolucion                  | Práctico           | `TP_<N>_Resolucion.<ext>`              | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
-| Trabajo Practico Correcciónes                | Práctico           | `TP_<N>_Correcciones.<ext>`            | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`          |
-| Actividades Consignas                        | Práctico           | `Actividad_<N>_Consignas.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Práctico/ActividadesClase/Actividades<N>`  |
-| Actividades resolucion                       | Práctico           | `Actividad_<N>_Resolucion.<ext>`       | `ICS_4K2_2025_G6_Repositorio/Práctico/ActividadesClase/Actividades<N>`  |
-| Trabajos Practicos Resuelto Consignas        | Práctico           | `TPResuelto_<N>_Consignas.<ext>`       | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosResueltos/TPResueltos<N>` |
-| Trabajo Practico Resuelto Resolucion         | Práctico           | `TPResuelto_<N>_Resolucion.<ext>`      | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosResueltos/TPResueltos<N>` |
-| Links Clases Grabadas Practico               | Práctico           | `Links_Clases_Grabadas_Practico`       | `ICS_4K2_2025_G6_Repositorio/Práctico`                                  |
-
+| Programa                                     | InformacionGeneral | `Programa.<ext>`                       | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
+| Cronograma                                   | InformacionGeneral | `Cronograma_Clases.<ext>`              | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
+| Libro                                       | Teorico            | `Unidad_<N>_<NombreLibro>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`                     |
+| Presentación de clase                       | Teorico            | `Presentacion_Tema_<N>.<ext>`           | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                     |
+| Trabajo Practico Consignas                  | Práctico           | `TP_Consignas.<ext>`                    | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos`                         |
+| Trabajo Practico Resuelto                   | Práctico           | `TP_<N>_Resolucion.<ext>`               | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                                     |
+| Ejericio Resuelto                        | Práctico              | `ER_Consignas_y_Resoluciones.<ext>`     | `ICS_4K2_2025_G6_Repositorio/Práctico/EjerciciosResueltos`                       |
 ---
 
 ## Glosario
 
 | Palabra             | Significado                                                                    | Ejemplos                         |
 | ------------------- | ------------------------------------------------------------------------------ | -------------------------------- |
-| ICS                 | Abreviacion de Ingeniería y calidad de software                                | `Planificacion_ISC_4K2_2025.pdf` |
-| 4K2                 | Comisión de Cursado de la asignatura                                           | `Resumen_Unidad_4.md`            |
-| 2025                | Año de desarrollo del proyecto                                                 | `Resumen_Unidad_3.md`            |
-| G6                  | Numero Grupo en el que se desarrollo el proyecto                               | `Resumen_Unidad_1.md`            |
-| `<N>`               | Numero de trabajo / clase / actividad                                          | `Actividad_12_Consignas.pdf`     |
-| `<ext>`             | Extensión del archivo en cuestion (.pdf, .txt, .md, etc)                       | `Actividad_12_Consignas.pdf`     |
-| `<CaracteristicaN>` | Hace referencia a alguna caracteristica significativa para el Item en cuestion | `Resumen_Unidad_3.md`            |
+| ICS                 | Abreviatura de Ingeniería y calidad de software                                | `ICS_4K2_2025_G6_Repositorio`    |
+| 4K2                 | Comisión de Cursado de la asignatura                                           |                                  |
+| 2025                | Año de desarrollo del proyecto                                                 |                                  |
+| G6                  | Numero Grupo en el que se desarrollo el proyecto                               |                                  |
+| TP                  | Abreviatura de Trabajo Practico                                                | `TP_Consignas.<ext>`             |
+| ER                  | Abreviatura de Ejericio Resuelto                                               | `ER_Consignas_y_Resoluciones.<ext>` |
+| `<N>`               | Numero de trabajo / clase / actividad                                          | `TP_<1>_Resolucion.<ext>`        |
+| `<ext>`             | Extensión del archivo en cuestion (.pdf, .txt, .md, etc)                       | `Programa.<pdf>`                 |
 
 
 ## Criterios de establecimiento de Linea base
@@ -155,7 +136,5 @@ v1.1.1 → solo bugfix.
 
 ---
 **Anotaciones**
-> Linea Base: esperar hasta un cierto punto. momento claro. podría ser después de una entrega corregida, después de un tp... un momento definido
-linea base la hace git 
-
-Glosario: hacer un txt que explique la nomenclatura abreviada 
+> Linea Base: falta especificarla
+> Falta corregir TIPO ITEM para Plan de Configuracion
