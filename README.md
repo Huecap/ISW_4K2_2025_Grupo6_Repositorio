@@ -26,22 +26,22 @@ ICS_4K2_2025_G6_Repositorio
 |--- Práctico 
 		|--- TrabajosPracticos
 				|--- TP<N>
-		|--- EjerciciosResueltos
 ```
 
 
 ## Ítems de configuración
 
-| Items de Configuracion                       | Tipo               | Esquema de Nombrado                    | Ubicacion                                                               |
-| -------------------------------------------- | ------------------ | -------------------------------------- | ----------------------------------------------------------------------- |
-| Plan de gestión de configuración de software | Proyecto           | `README.MD`                            | `ICS_4K2_2025_G6_Repositorio`                                           |
-| Programa                                     | InformacionGeneral | `Programa.<ext>`                       | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
-| Cronograma                                   | InformacionGeneral | `Cronograma_Clases.<ext>`              | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                        |
-| Libro                                       | Teorico            | `Unidad_<N>_<NombreLibro>.<ext>`        | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`                     |
-| Presentación de clase                       | Teorico            | `Presentacion_<N>_<Tema>.<ext>`           | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                     |
-| Trabajo Practico Consignas                  | Práctico           | `TP_<N>_Consigna.<ext>`                    | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                         |
-| Trabajo Practico Resuelto                   | Práctico           | `TP_<N>_Resolucion.<ext>`               | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                                     |
-| Ejericio Resuelto                        | Práctico              | `ER_Consignas_y_Resoluciones.<ext>`     | `ICS_4K2_2025_G6_Repositorio/Práctico/EjerciciosResueltos`                       |
+| Items de Configuracion                       | Tipo               | Esquema de Nombrado                              | Ubicacion                                                                                 |
+| -------------------------------------------- | ------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Plan de gestión de configuración de software | InformacionGeneral | `README.MD`                                      | `ICS_4K2_2025_G6_Repositorio`                                                             |
+| Programa                                     | InformacionGeneral | `Programa.<ext>`                                 | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                                          |
+| Cronograma                                   | InformacionGeneral | `Cronograma_Clases.<ext>`                        | `ICS_4K2_2025_G6_Repositorio/InformacionGeneral`                                          |
+| Libro                                        | Teorico            | `Unidad_<N>_<NombreLibro>.<ext>`                 | `ICS_4K2_2025_G6_Repositorio/Teórico/MaterialBibliográfico`                               |
+| Presentación de clase                        | Teorico            | `Presentacion_<N>_<Tema>.<ext>`                  | `ICS_4K2_2025_G6_Repositorio/Teórico/PresentacionesDeClase`                               |
+| Trabajo Practico Consignas                   | Práctico           | `TP_<N>_Consigna.<ext>`                          | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
+| Trabajo Practico Resuelto                    | Práctico           | `TP_<N>_Resolucion.<ext>`                        | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
+| Guia Ejercicios Resueltos                    | Practico           | `Ejercicios ResueltosConsignasYResoluciones.pdf` | `ISW_4K2_Repositorio_Grupo6_2025/Práctico/Ejercicios ResueltosConsignasYResoluciones.pdf` |
+
 ---
 
 ## Glosario
@@ -60,7 +60,7 @@ ICS_4K2_2025_G6_Repositorio
 
 ## Criterios de establecimiento de Linea base
 
->Luego de cada entrega de una corrección de un trabajo practico, se procederá a establecer una versión de la Línea base
+>Luego de cada entrega con correcciones de un trabajo práctico, se establecerá una nueva versión de la Línea Base. Esto se debe a que, con cada corrección, se obtiene una versión completa y actualizada del trabajo, la cual será asignada como Línea Base.
 
 
 ## Esquema de Nomenclaturas para trabajar 
@@ -114,6 +114,10 @@ fix/<nombre> -> Fixes
     - Se crean desde `main` para atender problemas detectados en la versión estable.
     - Se fusionan de vuelta en `main` una vez validada la solución.
     - Ejemplo: `fix/error-login`, `fix/ui-navbar`.
+**Commits merge**
+```
+Merge pull request #<N> from <branch> to <branch/main>
+```
 
 ---
 ### Lineas Base
@@ -135,6 +139,3 @@ v1.1.1 → solo bugfix.
     - Línea base estable que corrige fallos.
 
 ---
-**Anotaciones**
-> Linea Base: falta especificarla
-> Falta corregir TIPO ITEM para Plan de Configuracion
