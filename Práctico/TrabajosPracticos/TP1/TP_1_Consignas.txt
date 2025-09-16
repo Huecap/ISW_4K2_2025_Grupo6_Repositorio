@@ -1,0 +1,31 @@
+PRÁCTICO 1 - REQUERIMIENTOS ÁGILES – User Stories
+
+Unidad: Unidad Nro. 2: Gestión Lean-Ágil de Productos de Software 
+Consigna: Identificar y escribir las US identificadas en el Dominio presentado para el práctico 
+Objetivo: Aplicar los conceptos teóricos desarrollados en clase sobre User Stories. Propósito: Familiarizarse con los conceptos de requerimientos ágiles y en particular con Historias de Usuario (User Stories), Épicas y Temas 
+
+Entradas: Conceptos teóricos sobre el tema, desarrollados en clase. Bibliografía referenciada en la modalidad académica. Enunciado, consigna y tarjeta de US. 
+Salida:
+● Identificación de los roles principales
+● US identificadas con sus tarjetas completas 
+
+Este práctico no se entrega y por lo tanto no tiene nota. El tema se evalúa en el parcial. 
+
+Instrucciones: Los docentes representarán a expertos del dominio que expresarán sus necesidades vinculadas a desarrollar un software para un servicio de transporte. Los estudiantes realizarán preguntas con el objetivo de acordar juntos el alcance del proyecto, y determinar las user stories correspondientes y definir las pruebas de aceptación de usuario para cada una. Cada grupo presentará el resultado obtenido al final de la clase al resto del curso
+
+Aplicación Mis Gastos Familiares
+Objetivo del producto: facilitar a las personas la gestión de sus gastos cotidianos y poder acceder a información relacionada a estos.
+
+A continuación, se transcribe parte de la entrevista realizada al experto en el dominio:
+Product Owner (PO): ¿Cómo debe visualizarse la planilla de gastos?
+Experto en el Dominio (ED): Similar a una tabla en Excel, con columnas donde se pueda indicar el monto, el tipo de gasto, y la fecha en que se realizó el gasto.
+PO: ¿La fecha del gasto es la fecha actual? ¿Se toma automáticamente?
+ED: Debería mostrar la fecha actual, pero permitir modificarse.
+PO: ¿Cuáles son los tipos de gastos permitidos?
+ED: Cada persona debería poder registrar sus tipos de gastos, así como indicar si el gasto es propio o de otra persona (por ejemplo, de su esposa).
+PO: ¿El nombre o la relación con el usuario debe indicarse?
+ED: Debe indicarse el nombre y apellido. También por defecto debe mostrarse el nombre y el apellido del usuario logueado, permitiendo modificarlo, y si alguna vez se registró el nombre y apellido que se comienza a ingresar (no importa si esta vez o una vez anterior), el sistema debería mostrar aquellos nombres y apellidos que comiencen de forma similar, como hace el Excel.
+PO: Ah ¿Es decir que el usuario debe registrarse y cuando va a usar la aplicación debe iniciar sesión?, y ¿la sesión caduca en algún momento?
+ED: El usuario debe registrarse para permitirle descargar la aplicación, y la primera vez debe iniciar sesión, pero luego se consideran los datos de la sesión registrados, salvo que el usuario decida de loguearse. La sesión no caduca nunca.
+PO: ¿Y la planilla de gastos muestra todos los gastos? ¿Cómo se ordenan?
+ED: Por defecto se deben mostrar todos los gastos del mes en curso ordenados desde el gasto más actual, pero el sistema debería permitir ver cualquier período que el usuario quiera, y que pueda filtrar por tipo de gasto, por responsable de gasto, por rango de montos. Además debe poder modificar el criterio de ordenamiento. Y para cada filtro que se aplique arriba se debe mostrar el total de gastos según el filtro aplicado.
