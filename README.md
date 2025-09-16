@@ -21,7 +21,6 @@
 ICS_4K2_2025_G6_Repositorio
 |--- InformacionGeneral
 |--- Teórico
-		|--- MaterialBibliográfico
 		|--- PresentacionesDeClase
 |--- Práctico 
 		|--- TrabajosPracticos
