@@ -1,0 +1,27 @@
+PRÁCTICO 7 - SCRUM - Ejercicio de aplicación (Evaluable) 
+
+Unidad:  Unidad Nro. 2: Gestión Lean-Ágil de Productos de Software 
+Consigna: Por medio de las dinámicas propuestas por los docentes internalizar los conceptos del framework SCRUM. 
+Objetivo:  Profundizar el conocimiento del grupo de estudiantes en los conceptos, prácticas y lineamientos definidos en el  framework SCRUM a través de la ejecución de un caso práctico.
+ 
+Propósito: Familiarizarse con la forma gestionar el trabajo de un equipo, utilizando el framework de Scrum, empleando para  ello dinámicas colaborativas.  
+
+Entradas: ● Guía Oficial de Scrum 2020 
+● Conceptos teóricos sobre el tema, desarrollados en clase.  
+● Materiales necesarios, que deberán ser provistos por los estudiantes. 
+● Estimación de las User Stories, detallando las actividades necesarias para cada una 
+
+Salida: 
+Cada equipo de estudiantes con conocimientos esclarecidos relacionados a lo que propone SCRUM.  
+La dinámica de los juegos facilitará el debate sobre los resultados obtenidos y sobre la posición que tiene cada 
+uno respecto a estos temas.  
+Instrucciones:  A través de una dinámica de juego y de las instrucciones comunicadas por los docentes, implementar las siguientes prácticas de Scrum: 
+  
+● Priorización y planificación de Sprint, definiendo el objetivo del sprint 
+● Ejecución de Sprint  
+● Daily Scrum Meeting 
+● Sprint Review Meeting 
+● Sprint Retrospective 
+ 
+El docente asumirá el rol de instructor para moderar la ejecución de cada dinámica. 
+
