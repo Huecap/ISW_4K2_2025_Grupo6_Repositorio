@@ -1,0 +1,30 @@
+Consideraciones aclaradas por los profes:
+
+- Las actividades se dividen en horarios de 1 hora de diferencia que se distribuye en el tiempo en el que este abierto el parque (9hs a 18hs)
+
+- La cantidad de participantes en cada actividad es la siguiente:
+	- safari: 8 personas
+	- palestra: 12 personas
+	- jardineria: 12 personas
+	- tirolesa: 10 personas
+
+- Las cantidades de personas disponibles para anotarse a una actividad debe ser visible por el usuario
+
+- Los limites de edad para cada actividad son los siguientes:
+	- Safari: Sin limite
+	- Palestra: 12 años o mas
+	- Jardineria: Sin limite
+	- Tirolesa: 8 años o mas
+No hay un limite superior de edad
+
+- Únicamente las actividades palestra y tirolesa requieren una vestimenta
+
+- Los talles de las vestimentas son con letras y van desde XS hasta XXL
+
+- Debe validarse que no haya una persona inscripta a otra actividad en el mismo horario, pero puede inscribirse a multiples actividades durante el dia.
+
+- No hay términos y condiciones especificados por la catedra, pero debemos crear unos nosotros mismos y deben ser unos términos y condiciones distintos por actividad
+
+- La paleta de colores a utilizar es la siguiente: https://coolors.co/134611-3e8914-3da35d-96e072-e8fccf 
+
+- No hay requerimientos de que el sistema deba ser una app o un sitio web como tampoco un flujo en especifico para llevar a cabo la US, lo único que nos recomendaron es que primero se seleccione una actividad, seleccionando un horario e ingresando la cantidad de personas que queremos inscribir
