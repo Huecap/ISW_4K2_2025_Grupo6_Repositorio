@@ -38,7 +38,8 @@ ICS_4K2_2025_G6_Repositorio
 | Trabajo Practico Consignas                   | Práctico           | `TP_<N>_Consigna.<ext>`                          | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
 | Trabajo Practico Resuelto                    | Práctico           | `TP_<N>_Resolucion.<ext>`                        | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP<N>`                            |
 | Guia Ejercicios Resueltos                    | Practico           | `Ejercicios ResueltosConsignasYResoluciones.pdf` | `ISW_4K2_Repositorio_Grupo6_2025/Práctico/Ejercicios ResueltosConsignasYResoluciones.pdf` |
-| Tp Consignas                                 | Práctico           | `TP_Consignas.<ext>`                             | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
+| Tp Consignas                                 | Práctico           | `TP_<N>_Consignas.<ext>`                             | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
+| Tp Consideraciones                           | Practico           | `TP_<N>_Consideraciones.<ext>`                   | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
 
 ---
 
