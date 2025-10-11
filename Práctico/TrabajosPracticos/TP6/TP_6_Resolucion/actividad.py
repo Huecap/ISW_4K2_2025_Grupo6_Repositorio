@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
+from visitante import Visitante
 
 class Actividad(ABC):
-    def __init__(self, cupo_total, visitantes, horario, tyc):
+    def __init__(self, cupo_total, visitantes: list[Visitante], horario, tyc):
         self.cupo_total = cupo_total
         self.visitantes = visitantes
         self.horario = horario
