@@ -80,6 +80,23 @@ def test_inscripcion_fuera_horario():
     # Intentar inscribir en horario fuera del rango de horarios disponibles
     resultado = jardineria.inscribir_visitante(visitante, "08:00")  # Actividad no disponible
     assert resultado == False # FALLA
+
+def test_incripcion_sin_vestimenta_requerido():
+    "Probar inscribirse a una actividad sin ingresar el talle de la vestimenta "
+    "requerido por la actividad"
+
+    tirolesa = Tirolesa() # Tirolesa si requiere vestimenta
+    visitante = Visitante(
+        nombre="Juan", 
+        dni="42653547", 
+        edad=35, 
+        talla_vestimenta=None,  
+        acepta_tyc=True
+    ) 
+
+    resultado = tirolesa.inscribir_visitante(visitante, "09:00")
+    assert resultado == False #FALLA
+    
     
 if __name__ == "__main__":
     
@@ -87,3 +104,4 @@ if __name__ == "__main__":
     test_inscripcion_sin_cupo()
     test_incripcion_sin_vestimenta_no_requerida()
     test_inscripcion_fuera_horario()
+    test_incripcion_sin_vestimenta_requerido()
