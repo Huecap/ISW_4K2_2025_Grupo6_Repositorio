@@ -51,7 +51,7 @@ def test_con_cupo():
     # Probamos inscribir a otro visitante cuando no hay cupo
     resultado = inscribir_visitante(safari, visitante_nuevo, "11:00")
     assert resultado == True
-    
+        
 if __name__ == "__main__":
     
     test_con_cupo()
