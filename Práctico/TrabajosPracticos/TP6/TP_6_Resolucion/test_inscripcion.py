@@ -98,10 +98,30 @@ def test_incripcion_sin_vestimenta_requerido():
     assert resultado == False #FALLA
     
     
+def test_inscripcion_sin_aceptar_tyc():
+    """
+    Probar Inscribir un visitante a una actividad sin aceptar los terminos y condiciones
+    
+    """
+    safari = Safari()
+    visitante = Visitante(
+        nombre='Juancho', 
+        dni='123123123', 
+        edad=23, 
+        talla_vestimenta=None, 
+        acepta_tyc=False
+        )
+    resultado = safari.inscribir_visitante(visitante=visitante, horario="08:00")
+    assert resultado == False # FALLA
+    
 if __name__ == "__main__":
     
     test_incripcion_exitosa()
     test_inscripcion_sin_cupo()
     test_incripcion_sin_vestimenta_no_requerida()
     test_inscripcion_fuera_horario()
+<<<<<<< Updated upstream
     test_incripcion_sin_vestimenta_requerido()
+=======
+    test_inscripcion_sin_aceptar_tyc()
+>>>>>>> Stashed changes
