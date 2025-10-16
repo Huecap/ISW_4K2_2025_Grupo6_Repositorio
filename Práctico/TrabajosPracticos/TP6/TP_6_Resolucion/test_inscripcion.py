@@ -94,6 +94,13 @@ def test_incripcion_sin_vestimenta_requerido():
         acepta_tyc=True
     ) 
 
+    )
+    # Crear actividad Safari con 2 cupo, e inscribimos a un visitante
+    safari = Safari(2, [visitante_existente], "11:00", "Seguir al guia")
+    # Probamos inscribir a otro visitante cuando no hay cupo
+    resultado = inscribir_visitante(safari, visitante_nuevo, "11:00")
+    assert resultado == True
+        
     resultado = tirolesa.inscribir_visitante(visitante, "09:00")
     assert resultado == False #FALLA
     
@@ -120,8 +127,5 @@ if __name__ == "__main__":
     test_inscripcion_sin_cupo()
     test_incripcion_sin_vestimenta_no_requerida()
     test_inscripcion_fuera_horario()
-<<<<<<< Updated upstream
     test_incripcion_sin_vestimenta_requerido()
-=======
     test_inscripcion_sin_aceptar_tyc()
->>>>>>> Stashed changes
