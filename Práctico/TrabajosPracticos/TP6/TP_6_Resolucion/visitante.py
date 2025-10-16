@@ -1,7 +1,7 @@
 from actividad import Actividad
 
 class Visitante:
-    def __init__(self, nombre: str, dni: int, edad: int, talla_vestimenta: str, acepta_tyc: bool):
+    def __init__(self, nombre: str, dni: int, edad: int, talla_vestimenta: str|None, acepta_tyc: bool):
         self.nombre = nombre
         self.dni = dni
         self.edad = edad

@@ -120,8 +120,5 @@ if __name__ == "__main__":
     test_inscripcion_sin_cupo()
     test_incripcion_sin_vestimenta_no_requerida()
     test_inscripcion_fuera_horario()
-<<<<<<< Updated upstream
     test_incripcion_sin_vestimenta_requerido()
-=======
     test_inscripcion_sin_aceptar_tyc()
->>>>>>> Stashed changes
