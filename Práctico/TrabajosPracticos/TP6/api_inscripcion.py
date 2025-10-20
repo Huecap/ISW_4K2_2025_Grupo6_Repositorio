@@ -4,6 +4,8 @@ from flask_cors import CORS
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from db_config import db_uri, DB_PATH
+from actividad import Safari, Tirolesa, Palestra, Jardineria
+from visitante import Visitante as VisitanteDominio
 
 # Modelos y ORM
 from models import db, Visitante, Actividad, Turno, Inscripcion # (Actividad, Turno, Inscripcion) no los usamos directo aquí
@@ -22,6 +24,43 @@ app.config["SQLALCHEMY_DATABASE_URI"] = db_uri()
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 
+
+def validar_en_dominio(actividad_nombre: str, visitante_array: [dict], horario: str):
+    """
+    Usa las clases del dominio (actividad.py y visitante.py)
+    para validar que el visitante pueda inscribirse.
+    Si pasa, devuelve la instancia de VisitanteDominio validada.
+    Si falla, lanza una excepción descriptiva.
+    """
+    # Crear visitante del dominio (no persistente)
+    for visitante_data in visitante_array:
+        visitante_dom = VisitanteDominio(
+            nombre=visitante_data.get("nombre"),
+            dni=visitante_data.get("dni"),
+            edad=int(visitante_data.get("edad", 0)),
+            talla_vestimenta=visitante_data.get("talla_vestimenta"),
+            acepta_tyc=bool(visitante_data.get("acepta_tyc")),
+        )
+
+        # Crear actividad según nombre
+        actividad_nombre = actividad_nombre.lower()
+        if actividad_nombre == "safari":
+            actividad_dom = Safari()
+        elif actividad_nombre == "tirolesa":
+            actividad_dom = Tirolesa()
+        elif actividad_nombre == "palestra":
+            actividad_dom = Palestra()
+        elif actividad_nombre == "jardineria":
+            actividad_dom = Jardineria()
+        else:
+            raise ValueError(f"Actividad desconocida: {actividad_nombre}")
+
+        # Ejecutar la lógica de los tests (dominio puro)
+        # Si el método inscribir_visitante lanza alguna excepción, se intercepta arriba
+        resultado = actividad_dom.inscribir_visitante(visitante_dom, horario)
+
+        if not resultado:
+            raise ValueError(f"Validación fallida en dominio")
 
 def get_or_create_visitante(v_data: dict) -> Visitante:
     dni = str(v_data.get("dni", "")).strip()
@@ -89,8 +128,25 @@ def inscribir_visitante_api():
     resultados = []
     hubo_error = False
 
+    # Validación lógica del dominio (igual que los tests)
+    try:
+        validar_en_dominio(actividad, visitantes_data, horario)
+    except (ValueError) as e:
+        resultados.append(str(e))
+
+    if len(resultados) > 0:
+        status=400
+        return jsonify({
+        "success": hubo_error,
+        "actividad": actividad,
+        "horario": horario,
+        "resultados": resultados
+    }),status
+
     for v_data in visitantes_data:
         try:
+
+            
             v = get_or_create_visitante(v_data)
 
             # Llama a la lógica de negocio ya existente (valida TyC, edad, vestimenta, doble horario y cupo)

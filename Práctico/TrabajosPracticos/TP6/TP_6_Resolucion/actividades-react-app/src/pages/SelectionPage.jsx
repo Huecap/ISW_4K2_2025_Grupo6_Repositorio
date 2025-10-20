@@ -1,6 +1,10 @@
 import React from 'react';
 import Card from '../components/ui/card';
 
+
+// Cupos fijos por actividad (fallback si no viene a.cupoMax desde App.jsx)
+const CUPOS_FIJOS = { Safari: 8, Tirolesa: 10, Palestra: 12, Jardinería: 12 };
+
 export default function SelectionPage({
   activities,
   selectedActivity,
@@ -18,6 +22,7 @@ export default function SelectionPage({
 
       <div className="cards-container">
         {activities.map((a, idx) => {
+          const cupoMax = a.cupoMax ?? CUPOS_FIJOS[a.title] ?? CUPOS_FIJOS[a.actividad];
           // 🔹 Calculamos cupos disponibles y si hay algún turno con cupos suficientes
           const totalDisponibles = (a.turnos || []).reduce(
             (acc, t) => acc + (t.cupo_disponible || 0),
@@ -48,6 +53,7 @@ export default function SelectionPage({
               style={{
                 cursor: tieneTurnoSuficiente ? 'pointer' : 'not-allowed',
                 opacity: tieneTurnoSuficiente ? 1 : 0.5,
+                position: 'relative', // para posicionar la etiqueta a la derecha
               }}
             >
               <Card
@@ -56,6 +62,23 @@ export default function SelectionPage({
                 description={`${a.description} · ${turnosConCupo} horarios con cupo · ${totalDisponibles} lugares totales`}
                 isSelected={isSelected}
               />
+               {cupoMax != null && (
+                <span
+                  className="cupo-max-tag"
+                  style={{
+                    position: 'absolute',
+                    right: '16px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    fontSize: '0.9rem',
+                    color: '#475569',        // slate-600 aprox
+                    fontWeight: 600,
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  Cupo máx: {cupoMax}
+                </span>
+              )}
             </div>
           );
         })}

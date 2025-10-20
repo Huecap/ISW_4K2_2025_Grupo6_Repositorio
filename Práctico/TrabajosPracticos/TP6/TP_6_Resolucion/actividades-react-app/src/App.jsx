@@ -4,6 +4,7 @@ import EnrollmentPage from './pages/EnrollmentPage';
 import { getDisponibilidad } from './api';
 import './styles.css';
 
+const CUPOS = { Safari: 8, Tirolesa: 10, Palestra: 12, Jardinería: 12 };
 const ICONS = { Safari: '🦓', Palestra: '🧗', Tirolesa: '🦅', Jardinería: '🌱' };
 const DESCS = {
   Palestra: 'Desafía la gravedad en nuestros muros de escalada.',
@@ -26,7 +27,8 @@ export default function App() {
       ...it,
       title: it.actividad,
       icon: ICONS[it.actividad] || '🌱',
-      description: DESCS[it.actividad] || '',
+      description: DESCS[it.actividad] || 'Conecta con la naturaleza aprendiendo sobre plantas.',
+      cupoMax: CUPOS[it.actividad] || 12,
       turnos: [...it.turnos].sort((a, b) => a.hora.localeCompare(b.hora)),
     }));
     setActivities(enriched);
