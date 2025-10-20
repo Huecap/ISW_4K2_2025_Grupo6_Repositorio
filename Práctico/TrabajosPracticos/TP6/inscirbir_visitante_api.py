@@ -3,16 +3,22 @@ from flask_cors import CORS
 from actividad import Safari, Tirolesa
 from visitante import Visitante
 
+from sqlalchemy import select
+from sqlalchemy.exc import IntegrityError
+
+# Importá los modelos y servicios de persistencia
+from models import db, Visitante, Actividad, Turno
+from services import (
+    inscribir, cancelar_inscripcion, cupo_disponible,
+    CupoAgotado, RequisitosNoCumplidos, TurnoNoExiste, DobleHorario, VisitanteNoExiste
+)
+
 app = Flask(__name__)
 CORS(app)
 
-# Simulación del estado global: un "parque" con actividades pre-cargadas. esto deberiamos hacerlo por bd
-# o poner las actividades con los cupos una por hora con la cantidad de cupos real
-ACTIVIDADES = {
-    "Safari-11:00": Safari(cupo_total=2, visitantes=[], horario="11:00", tyc="Seguir al guia"),
-    "Safari-9:00": Safari(cupo_total=4, visitantes=[], horario="9:00", tyc="Seguir al guia"),
-    "Tirolesa-14:00": Tirolesa(8, [], "14:00", "Usar arnés"),
-}
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app_v3.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db.init_app(app)
 
 @app.route('/inscribir', methods=['POST'])
 def inscribir_visitante_api():
@@ -28,8 +34,8 @@ def inscribir_visitante_api():
     visitantes_data = datos.get('visitantes', [])  # Lista de objetos visitante
 
     # 3. Buscar la actividad en el estado global
-    clave_actividad = f"{nombre_actividad}-{horario_solicitado}"
-    actividad_seleccionada = ACTIVIDADES.get(clave_actividad)
+    # clave_actividad = f"{nombre_actividad}-{horario_solicitado}"
+    # actividad_seleccionada = ACTIVIDADES.get(clave_actividad)
 
     if not actividad_seleccionada:
         return jsonify({"success": False, "mensaje": "Actividad o horario no encontrado"}), 404
@@ -54,26 +60,36 @@ def inscribir_visitante_api():
     if not nuevos_visitantes:
         return jsonify({"success": False, "mensaje": "No se incluyeron visitantes"}), 400
     
+    
     cupo_disponible = actividad_seleccionada.cupo_total - len(actividad_seleccionada.visitantes)
     print(cupo_disponible)
-    
-    #aqui usamos las pruebas despues de haber mapeado los datos del json
-    resultado_inscripcion = inscribir_visitante(
-        actividad_seleccionada,
-        nuevos_visitantes,
-        horario_solicitado
-    )
 
-    # aqui deberiamos ver que si se cumplen todas las pruebas devuelva la respuesta a React
-    if resultado_inscripcion:
+    #aqui usamos las pruebas despues de haber mapeado los datos del json
+    resultados = []
+    for visitante in nuevos_visitantes:
+        actividad_seleccionada.inscribir_visitante(visitante, horario_solicitado)
+        resultados.append(ok)
+
+    if all(resultados):
         return jsonify({
             "success": True,
-            "mensaje": f"Inscripción exitosa a {nombre_actividad} a las {horario_solicitado}. cantidad de inscriptos: {len(nuevos_visitantes)}"
-        })
+            "mensaje": f"Inscripción exitosa a {nombre_actividad} a las {horario_solicitado}. "
+                    f"Cantidad de inscriptos: {len(resultados)}"
+        }), 201
     else:
-        # El error puede ser por falta de cupo, horario incorrecto, o que el visitante no cumple los requisitos.
-        return jsonify({"success": False, "mensaje": "No hay cupo disponible o el visitante no cumple los requisitos."}), 400
+        return jsonify({
+            "success": False,
+            "mensaje": "Alguna inscripción falló (sin cupo, edad o TyC no cumplidos)."
+        }), 400
+       
+
 
 if __name__ == '__main__':
+
+    with app.app_context():
+        # Si alguna vez querés crear tablas desde el ORM (no necesario si ya existe app_v3.db):
+        # db.create_all()
+        pass
+
     # Usar 'debug=True' solo para desarrollo, permite recargar automáticamente los cambios
     app.run(debug=True)

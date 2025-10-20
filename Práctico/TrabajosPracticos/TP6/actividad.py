@@ -55,7 +55,7 @@ class Actividad(ABC):
 class Tirolesa(Actividad):
     def __init__(self):
         tyc = "Uso obligatorio de arnés y casco, edad mínima 8 años"
-        horarios = ["09:00", "11:00", "13:00", "15:00", "17:00"]
+        horarios = ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
         super().__init__(
             nombre="Tirolesa",
             cupo_total=10,
@@ -68,7 +68,7 @@ class Tirolesa(Actividad):
 class Safari(Actividad):
     def __init__(self):
         tyc = "Seguir instrucciones del guía, no alimentar animales"
-        horarios = ["10:00", "12:00", "14:00", "16:00"]
+        horarios = ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
         super().__init__(
             nombre="Safari",
             cupo_total=8,
@@ -81,7 +81,7 @@ class Safari(Actividad):
 class Palestra(Actividad):
     def __init__(self):
         tyc = "Equipo de seguridad obligatorio, edad mínima 12 años"
-        horarios = ["09:00", "10:00", "11:00", "14:00", "15:00", "16:00"]
+        horarios = ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
         super().__init__(
             nombre="Palestra",
             cupo_total=12,
@@ -94,7 +94,7 @@ class Palestra(Actividad):
 class Jardineria(Actividad):
     def __init__(self):
         tyc = " Uso de guantes de protección, todas las edades"
-        horarios = ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
+        horarios = ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"]
         super().__init__(
             nombre="Jardineria",
             cupo_total=12,
