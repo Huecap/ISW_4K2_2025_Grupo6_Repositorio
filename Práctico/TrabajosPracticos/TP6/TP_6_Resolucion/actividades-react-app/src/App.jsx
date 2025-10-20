@@ -25,7 +25,7 @@ export default function App() {
     const enriched = items.map((it) => ({
       ...it,
       title: it.actividad,
-      icon: ICONS[it.actividad] || '🎯',
+      icon: ICONS[it.actividad] || '🌱',
       description: DESCS[it.actividad] || '',
       turnos: [...it.turnos].sort((a, b) => a.hora.localeCompare(b.hora)),
     }));
