@@ -233,3 +233,24 @@ display: flex;
  .card__icon { font-size: 26px; width: 44px; }
  .form-field__input { font-size: 14px; padding: 10px; }
 }
+
+.card--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(40%);
+}
+
+.card-wrapper:hover.card--disabled {
+  transform: none;
+}
+
+.input--error {
+  border-color: #dc2626;
+}
+
+.error-text {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+}

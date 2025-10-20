@@ -30,8 +30,23 @@ def get_or_create_visitante(v_data: dict) -> Visitante:
 
     existente = db.session.scalar(select(Visitante).where(Visitante.dni == dni))
     if existente:
+        # 🔁 Actualizar con los datos más recientes del formulario
+        # Tomamos el valor del payload si viene; si no, dejamos el actual.
+        if v_data.get("nombre"):
+            existente.nombre = v_data["nombre"]
+        if v_data.get("edad") is not None:
+            existente.edad = int(v_data["edad"])
+        # Para actividades que requieren vestimenta, permitimos actualizar el talle
+        if "talla_vestimenta" in v_data:
+            existente.talla_vestimenta = v_data["talla_vestimenta"]
+        # Si el usuario aceptó TyC ahora, reflejarlo
+        if "acepta_tyc" in v_data:
+            existente.acepta_tyc = bool(v_data["acepta_tyc"])
+
+        db.session.flush()  # aplica cambios sin cerrar la transacción
         return existente
 
+    # 🆕 Crear si no existe
     nuevo = Visitante(
         nombre=v_data.get("nombre"),
         dni=dni,
@@ -40,8 +55,7 @@ def get_or_create_visitante(v_data: dict) -> Visitante:
         acepta_tyc=bool(v_data.get("acepta_tyc", False)),
     )
     db.session.add(nuevo)
-    # ❌ antes hacías commit aquí, lo quitamos
-    db.session.flush()  # asigna ID sin cerrar transacción
+    db.session.flush()
     return nuevo
 
 
