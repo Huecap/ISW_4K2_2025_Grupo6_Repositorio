@@ -40,6 +40,9 @@ ICS_4K2_2025_G6_Repositorio
 | Guia Ejercicios Resueltos                    | Practico           | `Ejercicios ResueltosConsignasYResoluciones.pdf` | `ISW_4K2_Repositorio_Grupo6_2025/Práctico/Ejercicios ResueltosConsignasYResoluciones.pdf` |
 | Tp Consignas                                 | Práctico           | `TP_<N>_Consignas.<ext>`                             | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
 | Tp Consideraciones                           | Practico           | `TP_<N>_Consideraciones.<ext>`                   | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
+| BackendTP6                                   | Practico           | `Backend.<ext>`                                  | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP6`                              |
+| FrontendTP6                                  | Practico           | `Frontend.<ext>`                                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP6`                              |
+
 
 ---
 
