@@ -1,4 +1,4 @@
-from actividad import Actividad
+from Models.actividad import Actividad
 
 class Visitante:
     def __init__(self, nombre: str, dni: int, edad: int, talla_vestimenta: str|None, acepta_tyc: bool):

@@ -3,14 +3,14 @@ from flask_cors import CORS
 
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
-from db_config import db_uri, DB_PATH
-from actividad import Safari, Tirolesa, Palestra, Jardineria
-from visitante import Visitante as VisitanteDominio
+from BD.db_config import db_uri, DB_PATH
+from Models.actividad import Safari, Tirolesa, Palestra, Jardineria
+from Models.visitante import Visitante as VisitanteDominio
 
 # Modelos y ORM
-from models import db, Visitante, Actividad, Turno, Inscripcion # (Actividad, Turno, Inscripcion) no los usamos directo aquí
+from Models.models import db, Visitante, Actividad, Turno, Inscripcion # (Actividad, Turno, Inscripcion) no los usamos directo aquí
 # Servicios de dominio (validaciones y persistencia de la inscripción)
-from services import (
+from Services.services import (
     inscribir, cancelar_inscripcion, cupo_disponible,
     CupoAgotado, RequisitosNoCumplidos, TurnoNoExiste, DobleHorario, VisitanteNoExiste
 )

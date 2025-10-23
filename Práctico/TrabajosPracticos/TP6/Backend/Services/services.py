@@ -1,7 +1,7 @@
 
 from sqlalchemy import select, func
 from sqlalchemy.exc import IntegrityError
-from models import db, Visitante, Actividad, Turno, Inscripcion
+from Models.models import db, Visitante, Actividad, Turno, Inscripcion
 
 class CupoAgotado(Exception): ...
 class RequisitosNoCumplidos(Exception): ...
