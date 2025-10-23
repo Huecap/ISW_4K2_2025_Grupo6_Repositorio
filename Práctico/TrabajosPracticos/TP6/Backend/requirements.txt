@@ -1,0 +1,15 @@
+# --- Dependencias principales ---
+Flask==3.0.3
+Flask-Cors==4.0.0
+Flask-SQLAlchemy==3.1.1
+SQLAlchemy==2.0.31
+
+# --- Dependencias auxiliares y comunes ---
+Werkzeug==3.0.3
+itsdangerous==2.2.0
+Jinja2==3.1.4
+
+# --- (Opcional) Para entorno local o depuración ---
+python-dotenv==1.0.1
+
+#Ejectuar con pip install -r requirements.txt

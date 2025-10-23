@@ -1,5 +1,5 @@
-from actividad import Safari, Tirolesa, Palestra, Jardineria
-from visitante import Visitante
+from Backend.Models.actividad import Safari, Tirolesa, Palestra, Jardineria
+from Backend.Models.visitante import Visitante
 
 def test_incripcion_exitosa():
     """Probar inscribirse a una actividad con cupos disponibles, seleccionando un horario, 
@@ -76,7 +76,7 @@ def test_inscripcion_fuera_horario():
     )
     
     # Intentar inscribir en horario fuera del rango de horarios disponibles
-    resultado = jardineria.inscribir_visitante(visitante, "08:00")  # Actividad no disponible
+    resultado = jardineria.inscribir_visitante(visitante, "07:00")  # Actividad no disponible
     assert resultado == False # FALLA
 
 def test_incripcion_sin_vestimenta_requerido():
@@ -93,14 +93,13 @@ def test_incripcion_sin_vestimenta_requerido():
     ) 
 
     
-    # Crear actividad Safari con 2 cupo, e inscribimos a un visitante
-    safari = Safari(2, [visitante_existente], "11:00", "Seguir al guia")
-    # Probamos inscribir a otro visitante cuando no hay cupo
-    resultado = inscribir_visitante(safari, visitante_nuevo, "11:00")
-    assert resultado == True
+    # Crear actividad Safari 
+    safari = Safari()
+    resultado_1 = safari.inscribir_visitante(visitante, "11:00")
+    assert resultado_1 == True
         
-    resultado = tirolesa.inscribir_visitante(visitante, "09:00")
-    assert resultado == False #FALLA
+    resultado_2 = tirolesa.inscribir_visitante(visitante, "09:00")
+    assert resultado_2 == False #FALLA
      
 def test_inscripcion_sin_aceptar_tyc():
     """
@@ -119,9 +118,9 @@ def test_inscripcion_sin_aceptar_tyc():
     assert resultado == False # FALLA
 
 def test_inscripcion_multiples_actividades_mismo_horario_con_cupo():
-    from actividad import Safari
-    from actividad import Tirolesa
-    from visitante import Visitante
+    from Backend.Models.actividad import Safari
+    from Backend.Models.actividad import Tirolesa
+    from Backend.Models.visitante import Visitante
     visitante_nuevo = Visitante(
     nombre="Charlie", 
     dni="12345678", 
@@ -130,16 +129,16 @@ def test_inscripcion_multiples_actividades_mismo_horario_con_cupo():
     acepta_tyc=True
     )
     # Crear actividad Safari con 2 cupo, e inscribimos a un visitante
-    safari = Safari(2, [], "11:00", "Seguir al guia")
-    tirolesa = Tirolesa(2, [], "11:00", "Seguir al guia")
+    safari = Safari()
+    tirolesa = Tirolesa()
     inscripcion_1 = safari.inscribir_visitante(visitante_nuevo, "11:00")
     inscripcion_2 = tirolesa.inscribir_visitante(visitante_nuevo, "11:00")
-    assert inscripcion_1 == True & inscripcion_2 == False
+    assert inscripcion_1 == True and inscripcion_2 == False
 
 def test_inscripcion_multiples_actividades_distinto_horario_con_cupo():
-    from actividad import Safari
-    from actividad import Tirolesa
-    from visitante import Visitante
+    from Backend.Models.actividad import Safari
+    from Backend.Models.actividad import Tirolesa
+    from Backend.Models.visitante import Visitante
     visitante_nuevo = Visitante(
     nombre="Charlie", 
     dni="12345678", 
@@ -148,11 +147,11 @@ def test_inscripcion_multiples_actividades_distinto_horario_con_cupo():
     acepta_tyc=True
     )
     # Crear actividad Safari con 2 cupo, e inscribimos a un visitante
-    safari = Safari(2, [], "11:00", "Seguir al guia")
-    tirolesa = Tirolesa(2, [], "12:00", "Seguir al guia")
+    safari = Safari()
+    tirolesa = Tirolesa()
     inscripcion_1 = safari.inscribir_visitante(visitante_nuevo, "11:00")
     inscripcion_2 = tirolesa.inscribir_visitante(visitante_nuevo, "12:00")
-    assert inscripcion_1 == True & inscripcion_2 == False
+    assert inscripcion_1 == True and inscripcion_2 == True
     
 if __name__ == "__main__":
     test_incripcion_exitosa()
