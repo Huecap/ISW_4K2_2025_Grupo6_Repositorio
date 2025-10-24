@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../components/ui/card';
 
-
 // Cupos fijos por actividad (fallback si no viene a.cupoMax desde App.jsx)
 const CUPOS_FIJOS = { Safari: 8, Tirolesa: 10, Palestra: 12, Jardinería: 12 };
 
@@ -23,7 +22,6 @@ export default function SelectionPage({
       <div className="cards-container">
         {activities.map((a, idx) => {
           const cupoMax = a.cupoMax ?? CUPOS_FIJOS[a.title] ?? CUPOS_FIJOS[a.actividad];
-          // 🔹 Calculamos cupos disponibles y si hay algún turno con cupos suficientes
           const totalDisponibles = (a.turnos || []).reduce(
             (acc, t) => acc + (t.cupo_disponible || 0),
             0
@@ -35,8 +33,7 @@ export default function SelectionPage({
             (t) => (t.cupo_disponible || 0) >= numParticipants
           );
 
-          const isSelected =
-            selectedActivity && selectedActivity.title === a.title;
+          const isSelected = selectedActivity && selectedActivity.title === a.title;
 
           return (
             <div
@@ -53,32 +50,51 @@ export default function SelectionPage({
               style={{
                 cursor: tieneTurnoSuficiente ? 'pointer' : 'not-allowed',
                 opacity: tieneTurnoSuficiente ? 1 : 0.5,
-                position: 'relative', // para posicionar la etiqueta a la derecha
               }}
             >
-              <Card
-                icon={a.icon}
-                title={a.title}
-                description={`${a.description} · ${turnosConCupo} horarios con cupo · ${totalDisponibles} lugares totales`}
-                isSelected={isSelected}
-              />
-               {cupoMax != null && (
-                <span
-                  className="cupo-max-tag"
+              <div
+                className="card-content"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '16px',
+                }}
+              >
+                <Card
+                  icon={a.icon}
+                  title={a.title}
+                  description={`${a.description} · ${turnosConCupo} horarios con cupo · ${totalDisponibles} lugares totales`}
+                  isSelected={isSelected}
+                />
+
+                <div
+                  className="card-badges"
                   style={{
-                    position: 'absolute',
-                    right: '16px',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    fontSize: '0.9rem',
-                    color: '#475569',        // slate-600 aprox
-                    fontWeight: 600,
-                    whiteSpace: 'nowrap',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                    gap: '4px',
+                    minWidth: '120px',
                   }}
                 >
-                  Cupo máx: {cupoMax}
-                </span>
-              )}
+                  {cupoMax != null && (
+                    <span
+                      className="cupo-max-tag"
+                      style={{
+                        fontSize: '0.9rem',
+                        color: '#475569', // slate-600 aprox
+                        fontWeight: 600,
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      Cupo máx: {cupoMax}
+                    </span>
+                  )}
+
+                  
+                </div>
+              </div>
             </div>
           );
         })}
@@ -99,10 +115,7 @@ export default function SelectionPage({
             />
           </label>
 
-          <button
-            onClick={handleStartEnrollment}
-            className="btn btn--primary"
-          >
+          <button onClick={handleStartEnrollment} className="btn btn--primary">
             2. Continuar a la Inscripción ({numParticipants} P.)
           </button>
         </div>

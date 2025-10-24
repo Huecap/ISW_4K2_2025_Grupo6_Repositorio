@@ -65,6 +65,7 @@ const ParticipantCard = ({ index, data, onChange, activity }) => {
             type="text"
             name="nombre"
             value={data.nombre || ''}
+            maxLength={70}
             onChange={handleChange}
             required
             className="form-field__input"
