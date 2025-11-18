@@ -24,6 +24,8 @@ ICS_4K2_2025_G6_Repositorio
 |--- Práctico 
 		|--- TrabajosPracticos
 				|--- TP<N>
+		|--- TrabajosInvestigacion
+				|--- TI<N>
 ```
 
 
@@ -42,6 +44,8 @@ ICS_4K2_2025_G6_Repositorio
 | Tp Consideraciones                           | Practico           | `TP_<N>_Consideraciones.<ext>`                   | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/`                                 |
 | BackendTP6                                   | Practico           | `Backend.<ext>`                                  | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP6`                              |
 | FrontendTP6                                  | Practico           | `Frontend.<ext>`                                 | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosPracticos/TP6`                              |
+| Trabajo Investigacion Consignas			   | Practico			|  `TI_<N>_Consigna.<ext>`                         | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosInvestigacion/TI<N>`                        |
+| Trabajo Investigacion Resuelto			   | Practico			|  `TI_<N>_Resolucion.<ext>`                       | `ICS_4K2_2025_G6_Repositorio/Práctico/TrabajosInvestigacion/TI<N>`                        |
 
 
 ---
@@ -55,6 +59,7 @@ ICS_4K2_2025_G6_Repositorio
 | 2025                | Año de desarrollo del proyecto                                                 |                                  |
 | G6                  | Numero Grupo en el que se desarrollo el proyecto                               |                                  |
 | TP                  | Abreviatura de Trabajo Practico                                                | `TP_Consignas.<ext>`             |
+| TI                  | Abreviatura de Trabajo Investigaciion                                          | `TI_Consignas.<ext>`             |
 | ER                  | Abreviatura de Ejericio Resuelto                                               | `ER_Consignas_y_Resoluciones.<ext>` |
 | `<N>`               | Numero de trabajo / clase / actividad                                          | `TP_<1>_Resolucion.<ext>`        |
 | `<ext>`             | Extensión del archivo en cuestion (.pdf, .txt, .md, etc)                       | `Programa.<pdf>`                 |
