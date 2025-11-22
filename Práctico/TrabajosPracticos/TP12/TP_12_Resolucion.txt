@@ -1,0 +1,56 @@
+
+Tablero propuesto para realizar la actividad:
+-------------------------------------------------------------------------------------------
+| PENDIENTES |        MASA      |      SALSA        | TOPINGS       |        HORNO      | LISTOS |
+|            |Haciendio|Hecho   |Haciendo |Hecho    |Haciendo|Hecho | Haciendo |Hecho   |        |
+-------------------------------------------------------------------------------------------
+| Pedido #   |         |        |         |         |        |       |         |        |       |
+| Pedido #   |         |        |         |         |        |       |         |        |       |
+| Pedido #   |         |        |         |         |        |       |         |        |       |
+-------------------------------------------------------------------------------------------
+
+
+Algunas Politicas:
+
+* La masa debe tener el borde doblado
+* La salsa debe cubrir toda la masa
+* Las pizzas de jamón y queso tiene que tener 4 jamon y 4 quesos
+* Las pizzas de rúcula tiene que tener 7 hojas de rúcula
+* Cada pizza debe estar 30 segundos en el horno, menos de eso se considera crudo y más de eso se considera quemado
+* Para las pizzas de jamón y queso el orden es : masa, salsa, toppings (solo jamón y queso), horno
+* Para las pizzas de rúcula el orden es: masa, salsa, horno y toppings (solo rúcula)
+* En el horno solo puede haber 3 pizzas al mismo tiempo, el tiempo de cocción de cada una se debe realizar en simultáneo
+* Una vez cerrado el horno no se puede abrir para colocar más pizzas
+* se decidio que para la masa el maximo wip sea de 4 (ya que de una hoja salian 4 masas), para la salsa un wip maximo de dos (ya que solamente había dos fibrones rojos),
+para los toppings un wip maximo de 3 y para el horno como ya se mencionó antes un wip maximo de 3.
+
+
+En total se realizaron 4 iteraciones de 7 minutos cada una.
+
+Se realizaron dos iteraciones con pizzas de jamón y queso, la siguiente iteración se agregó la pizza de rúcula y una última ronda con pedidos combinando ambas pizzas 
+que debían ser entregados completos.
+
+Durante las iteraciones se aplicaron los principios de la filosofía Lean y algunas de las prácticas generales de Kanban.
+Especialmente aprendimos la importancia de limitar el trabajo en progreso y como minimizar el desperdicio en cada etapa. 
+Pudimos ver cómo pequeños ajustes en el flujo reducían tiempos muertos y mejoraban la calidad.
+Cada iteración aportó aprendizajes individuales y también aprendizajes del equipo, que surgieron de la comunicación, la coordinación y la toma de decisiones como equipo.
+A traves de la incorporación progresiva de nuevas reglas y tipos de pizza nos vimos desafiados a reorganizarnos, redistribuir roles y responder a los cambios tratandode no perder eficiencia, generando una experiencia de equipo única e intransferible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
