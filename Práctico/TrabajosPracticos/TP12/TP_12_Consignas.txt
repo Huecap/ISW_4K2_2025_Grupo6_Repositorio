@@ -1,0 +1,42 @@
+PRÁCTICO 12 - KANBAN – Ejercicio de aplicación (Evaluable)
+
+Unidad Nro. 4: Aseguramiento de Calidad de Proceso y de Producto
+
+Consigna: A través de un juego y de las instrucciones comunicadas por los docentes, vivenciar los principios kanban
+
+Unidad: Unidad Nro. 4: Aseguramiento de Calidad de Proceso y de Producto
+
+Consigna: A través de un juego y de las instrucciones comunicadas por los docentes, vivenciar los principios kanban
+
+Objetivo: Experimentar cómo un sistema Kanban emerge de un proceso existente, como ocurre en el mundo real.
+Vivenciar un sistema Kanban completo, en lugar de centrarse sólo en el tablero Kanban y las mecánicas
+relacionadas.
+Comprender que los tableros dependen del contexto: para cualquier proceso dado hay muchos diseños de
+tableros diferentes que son adecuados y útiles, pero el tablero perfecto no necesariamente existe.
+Comprender los efectos de limitar su trabajo en progreso.
+Experimentar la autoorganización y la adaptación.
+
+Propósito: Familiarizarse la filosofía lean, internalizando los principios propuestos por Kanban, utilizando una dinámica
+grupal, en forma de juego.
+
+Entradas:
+● Conceptos teóricos sobre el tema, desarrollados en clase. Bibliografía referenciada sobre el tema.
+● Instrucciones del juego.
+● Materiales necesarios que deben ser llevado por los estudiantes.
+
+Salida: Mostrar los resultados de la dinámica en cada iteración.
+
+Instrucciones: El docente que dirige la dinámica será quién indique la consigna y el alcance de la dinámica a realizar.
+
+Lista de materiales
+• Post-Its en tres colores: amarillo (piña), rosa (jamón) y verde (rúcula)
+• Papel de impresora para cortar fondos de pizza (A4 / Carta u otros tamaños)
+• Marcadores rojos como salsa de tomate.
+• Pegamento o cinta transparente (para hacer que el Post-Its se pegue mejor)
+• Cinta de enmascarar (también conocida como cinta de pintor)
+• Tijeras (una pequeña + una grande por equipo)
+• Cronómetro
+• Tarjetas de pedido - un juego por equipo
+• Placa de horno - una por equipo
+• Hojas de reglas
+● Hojas de información general de Kanban
