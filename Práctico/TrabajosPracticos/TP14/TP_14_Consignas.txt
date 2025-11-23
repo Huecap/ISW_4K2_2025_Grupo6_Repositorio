@@ -1,0 +1,22 @@
+PRÁCTICO 14 - DESIGN THINKING – Publicidad de Instagram (Evaluable)
+
+Unidad: Unidad Nro. 2: Gestión Lean-Ágil de Productos de Software
+
+Consigna: Simular la definición de un producto de software. Para ello se utilizará una dinámica en la que se diseñará la
+publicidad en Instagram de un producto para vender en el mercado.
+
+Objetivo: Aplicar algunos conceptos de gestión ágil y design thinking en el desarrollo de productos de software y el
+concepto de MVP.
+
+Propósito: Familiarizarse con la gestión ágil de proyectos y algunos conceptos de Design Thinking.
+
+Entradas:
+● Conceptos teóricos sobre el tema desarrollados en clase.
+● Bibliografía referenciada sobre el tema.
+● Instrucciones de la dinámica.
+● Materiales de trabajo (a coordinar)
+
+Salida: 
+● Presentación con el resultado de la ejecución de las Etapas del proceso propuesto.
+● El diseño de la publicidad de un producto que cumple con el MVP, es decir que es la versión mínima de
+mi producto que me permite validarlo con el Mercado y obtener feedback del cliente. 
